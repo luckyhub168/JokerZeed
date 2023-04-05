@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1660831438-d27zkvql" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "คุณพี่ได้เครดิตฟรี 50.-",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/1088807112072757318/1088807276963446926/02_50-01.jpeg?width=930&height=930",
+            "size": "full"
+          }
+        ],
+        "borderWidth": "bold",
+        "cornerRadius": "xxl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "แจกเครดิตฟรี 50.-",
+            "color": "#ffffff",
+            "align": "center",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "ได้ชัวร์ รับได้ทุกวัน",
+            "color": "#ffffff",
+            "align": "center",
+            "weight": "bold"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "รับเครดิตฟรี",
+              "uri": "https://lin.ee/EDUPVcW"
+            },
+            "color": "#9900FF"
+          }
+        ],
+        "backgroundColor": "#ffffff",
+        "cornerRadius": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "แชร์ให้เพื่อน",
+              "uri": "https://liff.line.me/1660831438-d27zkvql"
+            },
+            "color": "#000000"
+          }
+        ],
+        "backgroundColor": "#FFFF00",
+        "cornerRadius": "lg"
+      }
+    ],
+    "backgroundColor": "#9900FF",
+    "paddingAll": "sm",
+    "spacing": "md"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
